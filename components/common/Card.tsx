@@ -1,4 +1,4 @@
-import { PROPERTY_IMAGES, ICONS, properties } from "@/contants/index";
+import { PROPERTY_IMAGES, ICONS, properties } from "@/constants/index";
 import { Property } from "@/interfaces";
 import Image from "next/image";
 
