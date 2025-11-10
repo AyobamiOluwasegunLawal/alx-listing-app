@@ -1,19 +1,22 @@
 import { StaticImageData } from "next/image";
 
-export interface Property {
-  id: number;
-  title: string;
-  description: string[];
+export interface PropertyProps {
+  name: string;
+  address: {
+    state: string;
+    city: string;
+    country: string;
+  };
   rating: number;
-  location: string;
-  specifications: {
-    icon: StaticImageData;
-    bedrooms?: string;
-    bathrooms?: string;
-    guests?: string;
-  }[];
-  pricePerNight: number;
-  image: StaticImageData;
+  category: string[];
+  price: number;
+  offers: {
+    bed: string;
+    shower: string;
+    occupants: string;
+  };
+  image: string;
+  discount: string;
 }
 
 export type ButtonProp = {
