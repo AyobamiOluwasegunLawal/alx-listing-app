@@ -2,26 +2,34 @@ import propertyOne from "@/public/assets/images/image_2.png";
 import propertyTwo from "@/public/assets/images/image_3.png";
 import propertyThree from "@/public/assets/images/image_4.png";
 import propertyFour from "@/public/assets/images/image_5.png";
+import logo from "@/public/assets/images/logo.png";
 
 //icons
-import rating from "@/public/assets/icons/Star_1.png";
 import bedroom from "@/public/assets/icons/bed.svg";
 import bathroom from "@/public/assets/icons/bathtub.svg";
 import person from "@/public/assets/icons/vector.png";
+import briefcase from "@/public/assets/icons/case_minimalistic.svg";
+import search from "@/public/assets/icons/magnifer.svg";
+import profile from "@/public/assets/icons/profile.png";
+
 import { PropertyProps } from "@/interfaces";
 
-export const PROPERTY_IMAGES = {
+export const IMAGES = {
   propertyOne,
   propertyTwo,
   propertyThree,
   propertyFour,
+  logo,
+  
 };
 
 export const ICONS = {
-  rating,
   bedroom,
   bathroom,
   person,
+  briefcase,
+  search,
+  profile
 };
 
 //PROPERTIES

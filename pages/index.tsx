@@ -17,10 +17,6 @@ export default function Home() {
   return (
     <div>
       <h1>AirBNB project</h1>
-
-      <Card />
-      <Button />
-      <Button style={true} />
     </div>
   );
 }

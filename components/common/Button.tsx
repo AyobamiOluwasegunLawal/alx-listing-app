@@ -1,14 +1,15 @@
 import { ButtonProp } from "@/interfaces";
+import React from "react";
 
-const Button = ({ style = false }: ButtonProp) => {
+const Button: React.FC<ButtonProp> = ({ title, style }) => {
   return (
     <button
       type="submit"
       className={`${
-        style ? "text-black border border-gray-100" : "bg-primary text-white"
-      } w-fit rounded-3xl py-2.5 px-10 cursor-pointer`}
+        style ?? "bg-primary text-white"
+      } rounded-3xl px-4 py-1.5 whitespace-pre cursor-pointer text-sm4`}
     >
-      Button
+      {title}
     </button>
   );
 };

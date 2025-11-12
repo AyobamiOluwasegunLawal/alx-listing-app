@@ -1,5 +1,17 @@
 import { StaticImageData } from "next/image";
 
+export type ButtonProp = {
+  style?: string;
+  title: string;
+};
+
+export interface HeaderFormData {
+  location: string;
+  checkIn: string;
+  checkOut: string;
+  guest: string;
+}
+
 export interface PropertyProps {
   name: string;
   address: {
@@ -18,7 +30,3 @@ export interface PropertyProps {
   image: string;
   discount: string;
 }
-
-export type ButtonProp = {
-  style?: boolean;
-};
